@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic相关组件
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button [navPush]="buttonPage" ion-button full>按钮-示例</button>
+  <button [navPush]="listPage" ion-button full>列表-示例</button>
+  <button [navPush]="cardPage" ion-button full>卡片-示例</button>
+  <button [navPush]="gesturePage" ion-button full>手势动作-示例</button>
+  <button [navPush]="lianxi01Page" ion-button full>练习1-滑动-跳转page</button>
+  <button [navPush]="fabPage" ion-button full>浮动操作按钮-示例</button>
+  <button [navPush]="gridPage" ion-button full>栅格系统-示例</button>
+  <button [navPush]="formPage" ion-button full>form表单-示例</button>
+  <button [navPush]="toastPage" ion-button full>toast吐司提示-示例</button>
+  <button [navPush]="lianxi02Page" ion-button full>练习2-登录-提示</button>
+  <button [navPush]="alertPage" ion-button full>alert提示-示例</button>
+  <button [navPush]="iconPage" ion-button full>icon字体图标-示例</button>
+  <button ion-button full (tap)="toLazyPage()">懒加载页面-示例</button>
+  <button ion-button full (tap)="toSearchPage()">search-示例</button>
+</ion-content>

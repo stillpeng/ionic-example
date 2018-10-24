@@ -1,0 +1,134 @@
+<!--
+  Generated template for the ListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>列表组件</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>-----普通列表-----</h2>
+  <ion-list>
+    <ion-item>Tom</ion-item>
+    <ion-item>Jerry</ion-item>
+  </ion-list>
+
+  <h2>---按钮作为列表项(可点击)---</h2>
+  <ion-list>
+    <button ion-item>Tom</button>
+    <button ion-item>Jerry</button>
+  </ion-list>
+
+  <h2>-----列表边距inset-----</h2>
+  <ion-list inset>
+    <ion-item>Tom</ion-item>
+    <ion-item>Jerry</ion-item>
+    <ion-item>Lucy</ion-item>
+    <ion-item>Lily</ion-item>
+  </ion-list>
+
+  <h2>-----无分割线列表-----</h2>
+  <ion-list no-lines>
+    <ion-item>Tom</ion-item>
+    <ion-item>Lucy</ion-item>
+  </ion-list>
+
+  <h2>---列表分隔项divider---</h2>
+  <ion-list>
+    <ion-item-divider>学生</ion-item-divider>
+    <ion-item>韩梅梅</ion-item>
+    <ion-item>李磊</ion-item>
+    <ion-item-divider>老师</ion-item-divider>
+    <ion-item>孙老师</ion-item>
+    <ion-item>张老师</ion-item>
+  </ion-list>
+
+  <h2>-----列表头部-----</h2>
+  <ion-list>
+    <ion-list-header>四大名著</ion-list-header>
+    <ion-item>西游记</ion-item>
+    <ion-item>水浒传</ion-item>
+    <ion-item>三国演义</ion-item>
+    <ion-item>红楼梦</ion-item>
+  </ion-list>
+
+  <h2>-----图标作为列表-----</h2>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="home" color="secondary"></ion-icon>
+      首页
+    </ion-item>
+    <ion-item>
+      <ion-icon name="settings" color="danger"></ion-icon>
+      设置
+    </ion-item>
+  </ion-list>
+
+  <h2>-----头像作为列表项-----</h2>
+  <ion-list>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/imgs/1.png">
+      </ion-avatar>
+      <h2>Tom</h2>
+      <p>Tom is a student</p>
+    </ion-item>
+    <ion-item>
+      <ion-avatar item-end>
+        <img src="assets/imgs/2.png">
+      </ion-avatar>
+      <h2>Jerry</h2>
+      <p>Jerry is a teacher</p>
+    </ion-item>
+  </ion-list>
+
+  <h2>-----滑动列表项------</h2>
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/imgs/1.png">
+        </ion-avatar>
+        <h2>Tom</h2>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light">
+          <ion-icon name="more"></ion-icon>
+          更多
+        </button>
+        <button ion-button color="danger">
+          <ion-icon name="heart"></ion-icon>
+          收藏
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/imgs/2.png">
+        </ion-avatar>
+        <h2>Jerry</h2>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="light">
+          <ion-icon name="more"></ion-icon>
+          更多
+        </button>
+        <button ion-button color="danger">
+          <ion-icon name="heart"></ion-icon>
+          收藏
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <h2>---数据来源于控制器----</h2>
+  <ion-list *ngFor="let item of list" (click)="selectItem(item)">
+    <button ion-item>{{item}}</button>
+  </ion-list>
+
+</ion-content>
